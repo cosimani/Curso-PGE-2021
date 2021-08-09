@@ -2,18 +2,17 @@
 
 .. _rcs_subversion:
 
-Clase 01 - PGE 2020
+Clase 01 - PGE 2021
 ===================
-(Fecha: 25 de agosto)
+(Fecha: 10 de agosto)
 
 :Autor: César Osimani
-:Correo: cosimani@ubp.edu.ar
-:Fecha: 25 de agosto de 2020
+:Correo: cesarosimani@gmail.com
 :Regularidad: 
-	- Primer parcial: Problemas para resolver en 2 horas.
-	- Segundo parcial: Trabajo práctico individual
-	- Tercer parcial: Mini exámenes, cuestionarios y participación en clase.
-	- La participación en clase tiene que ver con las intervenciones y exposición de ejercicios a pedido del docente.
+	- Primer parcial: Trabajo práctico individual para resolver en 3 horas.
+	- Segundo parcial: Trabajo práctico individual para resolver en 3 horas.
+	- Para los parciales se trabaja en equipo por Discord en distintas Mesas y se entrega individual ya que son exámenes distintos.
+	- Tercer parcial: Cada día de clases hay un práctico para entregar individualmente. En caso de no asistir en el horario de clases se podrá entregar un video (grabado con OBS) con el desarrollo completo del práctico.
 :Temas principales:
 	- Programación genérica y orientada a eventos
 	- Sobrecarga de operadores
@@ -25,8 +24,7 @@ Clase 01 - PGE 2020
 	- Manejo de imágenes a nivel píxel
 	- OpenGL
 	- Procesamiento de imágenes
-	- Creación de librerías
-	
+	- Creación de librerías	
 
 Introducción
 ============
