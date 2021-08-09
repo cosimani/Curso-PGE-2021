@@ -26,6 +26,24 @@ Clase 01 - PGE 2021
 	- Procesamiento de imágenes
 	- Creación de librerías	
 
+Instalación de herramientas
+===========================
+
+:QtCreator: 
+	- Desinstalar todas las versiones de Qt ejecutando C:\Qt\MaintenanceTool.exe y tildando Uninstall only 
+	- Descargar el `Instalador Online <https://www.qt.io/download-thank-you?hsLang=en>`_
+	- Ejecutar el archivo qt-unified-windows-x86-4.1.1-online.exe y utilizar una cuenta de Qt
+	- Realizar la instalación Qt 6.1 for desktop development. Se requieren 16 GBytes de disco. En caso de querer reducir, se deberá hacer una Custom installation. 16:21
+
+:OpenSSL: 
+	- Descargar instalador desde la `Página de descarga <https://slproweb.com/products/Win32OpenSSL.html>`_
+	- Seleccionar el instalador .exe Win64 OpenSSL v1.1.1k Light
+
+
+:OBS Studio: 
+	- Descargar instalador desde la `Página de descarga <https://obsproject.com/es>`_ e instalar
+
+
 Introducción
 ============
 
