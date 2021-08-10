@@ -52,20 +52,19 @@ Metodología didáctica
 	- Cada clase desde las 17:00 horas estará destinado a la resulición de ejercicios.
 	- El docente propone un ejercicio que, si los contenidos de la materia se mantienen al día, se pueden realizar en 30 minutos.
 	- La búsqueda de la resolución del ejercicio se realiza de manera grupal en las mesas de Discord y la entrega es individual.
-	- Luego de resolver el ejercicio se debe explicar, en un video compartiendo pantalla, cómo se resuelve. Es muy similar a los Desafíos Qt.
+	- Luego de resolver el ejercicio se debe explicar, en un video compartiendo pantalla, cómo se resuelve. Similar a los Desafíos Qt.
 	- Para cada ejercicio se definirá un "Punto de partida" que indicará desde dónde debe comenzar la explicación en el video.
 	- Los ejecicios entregados correctamente llevan la nota 10.
 	- Ejercicios no entregados llevan nota 0.
 	- Ejercicios que no respeten el punto de partida y/o la completitud del ejercicio llevan nota 5.
-	- Esta modalidad está pensada para que la entrega de ejercicios
-	- Debido a que puede suceder alguien que no pueda asistir a alguna de las clases, se da tiempo para la entrega del ejercicio hasta la medianoche del mismo día. En caso de necesitar más tiempo por razones particulares, escribir al docente por WhatsApp para fijar una nueva hora de entrega. Pasado este tiempo, el ejercicio queda como no entregado.
+	- Debido a que puede suceder que alguien no pueda asistir a alguna de las clases, se da tiempo para la entrega del ejercicio hasta la medianoche del mismo día. En caso de necesitar más tiempo por razones particulares, escribir al docente por WhatsApp para fijar una nueva hora de entrega. Pasado este tiempo, el ejercicio queda como no entregado.
 	- El video debe quedar disponible en Youtube como No listado y se comparte el link por mensaje privado en Teams.
-	- Denominaremos a estos ejercicios como Entregable.
+	- Denominaremos a estos ejercicios como Entregables.
 
 :Regularidad: 
 	- Primer parcial: Trabajo práctico individual para resolver en 2 horas (será para la primer quincena de octubre).
 	- Para este parcial se trabaja en equipo por Discord en distintas Mesas y se entrega individual ya que son exámenes distintos.
-	- Segundo parcial: Promedio de todos los ejercicios prácticos.
+	- Segundo parcial: Promedio de todos los Entregables.
 	- Recuperatorios: Se pueden recuperar ambos parciales durante la última semana de cursado. El recuperatorio del primer parcial es un práctico individual para resolver en 2 horas. El recuperatorio del segundo parcial tiene una parte práctica para resolver en 1 hora y una parte teórica para responder oralmente.
 
 Introducción
