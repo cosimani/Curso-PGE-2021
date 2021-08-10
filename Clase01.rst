@@ -127,5 +127,5 @@ Entregable Clase 01
 
 - Punto de partida: Computadora sin Qt instalado
 - Se pide grabar un video descargando el instalador online de Qt y mostrar hasta que comience la instalación.
-- Este primer entregable tiene como objetivo poner a punto el mecanismo de entrega de los ejercicios.
+- Este primer entregable tiene como objetivo poner a punto el mecanismo de entrega de los ejercicios de cada clase.
 
