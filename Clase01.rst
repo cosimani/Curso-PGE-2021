@@ -39,6 +39,10 @@ Instalación de herramientas
 :OBS Studio: 
 	- Descargar instalador desde la `Página de descarga <https://obsproject.com/es>`_ e instalar
 
+:Blender: 
+	- Descargar instalador desde la `Página de descarga <https://www.blender.org/>`_ 
+	- Es una herramienta para modelado 3D, animación, edición de video, ...
+
 
 Metodología didáctica
 =====================
@@ -60,6 +64,8 @@ Metodología didáctica
 	- Debido a que puede suceder que alguien no pueda asistir a alguna de las clases, se da tiempo para la entrega del ejercicio hasta la medianoche del mismo día. En caso de necesitar más tiempo por razones particulares, escribir al docente por WhatsApp para fijar una nueva hora de entrega. Pasado este tiempo, el ejercicio queda como no entregado.
 	- El video debe quedar disponible en Youtube como No listado y se comparte el link por mensaje privado en Teams.
 	- Denominaremos a estos ejercicios como Entregables.
+	- El tiempo de duración del video queda a criterio de quien lo entrega.
+	- El video se puede editar con Blender si lo desea.
 
 :Regularidad: 
 	- Primer parcial: Trabajo práctico individual para resolver en 2 horas (será para la primer quincena de octubre).
@@ -115,4 +121,11 @@ Plantillas
 - Para el diseño de una clase genérica es aconsejable ir de lo particular a lo general.
 - Primero diseñar y depurar una clase referido a un tipo concreto.
 - Libro: El lenguaje de programación C++ de Stroustrup - 13.1 - 13.2 - 13.2.1 - 13.2.2
+
+Entregable Clase 01
+===================
+
+- Punto de partida: Computadora sin Qt instalado
+- Se pide grabar un video descargando el instalador online de Qt y mostrar hasta que comience la instalación.
+- Este primer entregable tiene como objetivo poner a punto el mecanismo de entrega de los ejercicios.
 
