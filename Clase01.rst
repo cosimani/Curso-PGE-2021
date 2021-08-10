@@ -59,6 +59,8 @@ Metodología didáctica
 	- Ejercicios que no respeten el punto de partida y/o la completitud del ejercicio llevan nota 5.
 	- Esta modalidad está pensada para que la entrega de ejercicios
 	- Debido a que puede suceder alguien que no pueda asistir a alguna de las clases, se da tiempo para la entrega del ejercicio hasta la medianoche del mismo día. En caso de necesitar más tiempo por razones particulares, escribir al docente por WhatsApp para fijar una nueva hora de entrega. Pasado este tiempo, el ejercicio queda como no entregado.
+	- El video debe quedar disponible en Youtube como No listado y se comparte el link por mensaje privado en Teams.
+	- Denominaremos a estos ejercicios como Entregable.
 
 :Regularidad: 
 	- Primer parcial: Trabajo práctico individual para resolver en 2 horas (será para la primer quincena de octubre).
