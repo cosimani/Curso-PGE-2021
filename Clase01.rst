@@ -26,7 +26,7 @@ Instalación de herramientas
 ===========================
 
 :QtCreator: 
-	- Desinstalar todas las versiones de Qt ejecutando C:/Qt\\MaintenanceTool.exe y tildando Uninstall only 
+	- Desinstalar todas las versiones de Qt ejecutando C:\\Qt\\MaintenanceTool.exe y tildando Uninstall only 
 	- Descargar el `Instalador Online <https://www.qt.io/download-thank-you?hsLang=en>`_
 	- Ejecutar el archivo qt-unified-windows-x86-4.1.1-online.exe y utilizar una cuenta de Qt
 	- Realizar la instalación Qt 6.1 for desktop development. Se requieren 16 GBytes de disco. En caso de querer reducir, se deberá hacer una Custom installation. Toma aproximadamente 45 minutos la descarga e instalación.
