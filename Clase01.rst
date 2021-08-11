@@ -66,6 +66,8 @@ Metodología didáctica
 	- Denominaremos a estos ejercicios como Entregables.
 	- El tiempo de duración del video queda a criterio de quien lo entrega.
 	- El video se puede editar con Blender si lo desea.
+	- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
+
 
 :Regularidad: 
 	- Primer parcial: Trabajo práctico individual para resolver en 2 horas (será para la primer quincena de octubre).
@@ -73,54 +75,6 @@ Metodología didáctica
 	- Segundo parcial: Promedio de todos los Entregables.
 	- Recuperatorios: Se pueden recuperar ambos parciales durante la última semana de cursado. El recuperatorio del primer parcial es un práctico individual para resolver en 2 horas. El recuperatorio del segundo parcial tiene una parte práctica para resolver en 1 hora y una parte teórica para responder oralmente.
 
-Introducción
-============
-
-**Programación Genérica**: Generalizar las funciones para que puedan ser utilizadas en varios casos.
-
-Ventajas:
-	- Reutilización de código.
-	- Fácil mantenimiento de código.
-	- Nos concentramos más en la lógica del sistema.
-
-Desventajas:
-	- Pérdida de interés para los amantes de la programación a bajo nivel.
-	- En C++ requiere el uso de Templates y sobrecarga de operadores, que es dificultoso y poco legible.
-
-**Programación Orientada a Eventos**: La ejecución está determinada por los sucesos que ocurran.
-	- Generalmente el usuario es el que dirige la ejecución del programa.
-	- Básicamente el programa queda sin actividad hasta producirse un evento.
-	- Es la base de la interfaz de usuario.
-
-*Ventajas*:
-	- Mejoras en las interfaces de usuario.
-	- Uso del mouse (o sea, hace tiempo estamos orientados a eventos)
-
-*Desventajas*:
-	- El hilo de ejecución se pierde de vista.
-	- Es un tanto abstracto (abstracto se refiere al ¿qué hace? y no tanto en ¿cómo lo hace?, como si fuera una caja negra), se maneja generalmente a alto nivel. 
-	- Complicado para manejar los eventos a bajo nivel.
-	
-Plantillas
-==========
-- Separa la estructura del contenido.
-- Permite construir un diseño predefinido
-- Facilita el trabajo de realizar copias idénticas de la estructura.
-
-- Utilización de tipos como parámetros
-- Teniendo la función ``ordena( v )``. Dependerá del tipo de v para generar la función.
-
-.. code-block::
-
-    template< class T > void ordena( T v[] )  {
-    
-    }
-
-- Mecanismo que permite usar un tipo como parámetro en una clase o función.
-- Clases genéricas: Es un “constructor” (o creador) de clases (no confundir con el constructor de una clase).
-- Para el diseño de una clase genérica es aconsejable ir de lo particular a lo general.
-- Primero diseñar y depurar una clase referido a un tipo concreto.
-- Libro: El lenguaje de programación C++ de Stroustrup - 13.1 - 13.2 - 13.2.1 - 13.2.2
 
 Entregable Clase 01
 ===================
