@@ -53,7 +53,7 @@ Metodología didáctica
 	- Cada clase desde las 15:15 horas hasta las 16:45 horas se expondrán los contenidos teóricos.
 
 :Práctica: 
-	- Cada clase desde las 17:00 horas estará destinado a la resulición de ejercicios.
+	- Cada clase desde las 17:00 horas estará destinado a la resolución de ejercicios.
 	- El docente propone un ejercicio que, si los contenidos de la materia se mantienen al día, se pueden realizar en 30 minutos.
 	- La búsqueda de la resolución del ejercicio se realiza de manera grupal en las mesas de Discord y la entrega es individual.
 	- Luego de resolver el ejercicio se debe explicar, en un video compartiendo pantalla, cómo se resuelve. Similar a los Desafíos Qt.

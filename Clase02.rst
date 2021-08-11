@@ -107,9 +107,10 @@ Entregable Clase 02
 ===================
 
 - Punto de partida: Other Project -> Empty qmake Project
-- Copiar y pegar este código de la clase Listado en el archivo de cabecera listado.h
-- Se recomiendoa que la definición de clases genéricas se realice únicamente en un archivo .h (no usar el .cpp)
+- Copiar y pegar este código de la clase Listado en un archivo de cabecera listado.h
+- Se recomienda que la definición de clases genéricas se realice en un único archivo .h (no usar el .cpp)
 - Dentro de la función main en el archivo main.cpp instanciar un objeto Listado que contenga int
 - Agregar 5 datos del tipo int en ese objeto Listado
 - Recorrerlo con un for mostrando en consola estos 5 valores
+- Explicar a medida que se vaya haciendo el ejercicio
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
