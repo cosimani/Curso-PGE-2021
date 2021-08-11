@@ -63,10 +63,14 @@ Metodología didáctica
 	- Ejercicios que no respeten el punto de partida y/o la completitud del ejercicio llevan nota 5.
 	- Debido a que puede suceder que alguien no pueda asistir a alguna de las clases, se da tiempo para la entrega del ejercicio hasta la medianoche del mismo día. En caso de necesitar más tiempo por razones particulares, escribir al docente por WhatsApp para fijar una nueva hora de entrega. Pasado este tiempo, el ejercicio queda como no entregado.
 	- El video debe quedar disponible en Youtube como No listado y se comparte el link por mensaje privado en Teams.
+	- Para subir videos largo a Youtube, la cuenta debe estar verificada (`ver cómo hacerlo en este video: <https://www.youtube.com/watch?v=L2BZQlnlc5M>`_)
 	- Denominaremos a estos ejercicios como Entregables.
 	- El tiempo de duración del video queda a criterio de quien lo entrega.
-	- El video se puede editar con Blender si lo desea.
+	- El video se puede editar con Blender u otro aplicativo si lo desea. (`aquí una herramienta online <https://online-video-cutter.com/es/>`_)
 	- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
+
+
+
 
 
 :Regularidad: 
