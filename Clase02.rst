@@ -114,4 +114,4 @@ Entregable Clase 02
 - Recorrerlo con un for mostrando en consola estos 5 valores
 - Explicar a medida que se vaya haciendo el ejercicio
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
-- El link de Youtube se comparte con el docente or mensjae privado de Teams.
+- El link de Youtube se comparte con el docente por mensaje privado de Teams.
