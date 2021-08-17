@@ -71,7 +71,7 @@ Sobrecarga de operadores
 
 **Sobrecargando operadores en la clase genérica Listado**
 
-- Modificar la clase Listado sobrecargando ``operator+`` de tal forma que al sumar dos listados se obtenga un nuevo objeto Listado con los elementos consecutivos.
+- Modificar la clase Listado sobrecargando ``operator+`` de tal forma que al sumar dos listados se obtenga un nuevo objeto Listado con los elementos consecutivos y la cantidad de celdas disponibles acumuladas.
 
 .. code-block:: c
 
