@@ -91,7 +91,7 @@ Entregable Clase 03
 - Agregar los siguientes dos métodos: ``borrar_del_final( int cuantos )`` y ``borrar_del_principio( int cuantos )``. 
 - Tener en cuenta que tenemos ya definidos métodos que borran elementos, entonces, utilizarlos para ahorrar tiempo de desarrollo.
 - En la función main crear un ``Listado< str::string >`` y agregar 8 cadenas
-- Borrar 2 elemnetos del final y borar 2 elementos del principio
+- Borrar 2 elementos del final y borrar 2 elementos del principio
 - Recorrer el Listado con un for y mostrar los elementos que quedan
 - Explicar a medida que se vaya haciendo el ejercicio
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
