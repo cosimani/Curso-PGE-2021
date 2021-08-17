@@ -4,7 +4,7 @@
 
 Clase 03 - PGE 2020
 ===================
-(Fecha: 1 de septiembre)
+(Fecha: 17 de agosto)
 
 
 **La clase Listado quedó así:**
