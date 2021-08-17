@@ -7,38 +7,67 @@ Clase 03 - PGE 2020
 (Fecha: 1 de septiembre)
 
 
+**La clase Listado quedó así:**
+
+.. code-block:: c
+
+	#ifndef LISTADO_H
+	#define LISTADO_H
+
+	template < class T > class Listado  {
+	private:
+	    int cantidad;
+	    T * v;
+	    int libre;
+
+	public:
+	    Listado( int cantidad = 10 ) : cantidad( cantidad ), v( new T[ cantidad ] ), libre( 0 )  {  }
+
+	    T get( int i )  {  return v[ i ];  }
+	    bool add( T contenido );
+	    int getCantidad()  {  return this->cantidad;  }
+	    int size()  {  return libre;  }
+	};
 
 
-Ejercicio 1:
-============
+	template < class T > bool Listado< T >::add( T contenido )  {
+	    if ( cantidad <= libre )
+	        return false;
 
-- En un archivo de cabecera definir la clase Listado con todos sus métodos off-line
-- Agregar un método que inserte un elemento en la posición i desplazando los otros
+	    v[ libre ] = contenido;
+	    libre++;
+	    return true;
+	}
 
-.. code-block::
+	#endif // LISTADO_H
 
-	bool insert( int I, T elemento )
+**¿Qué otros métodos sería oportuno agregar?**
 
-- Agregar método que elimine todos los elementos
+- Método que elimine todos los elementos, que vacíe el Listado
 
 .. code-block::
 
 	void clear()
 
-- Método que elimine una cantidad x de elementos. Los últimos o los primeros según el bool.
+- Método que elimine un elemento del final.
 
 .. code-block::
 	
-	void erase( int x, bool front_or_back )
+	void pop_back()
 	
 - Método que elimine el elemento de la posición i.
 
 .. code-block::
 	
-	void borrar( int i )
+	void erase( int i )
 
+- Método que inserte un elemento en la posición i desplazando los otros
 
+.. code-block::
 
+	bool insert( int i, T elemento )	
+
+- Modificar listado.h para que todos sus métodos queden definidos de manera off-line
 
 
 Herencia con clases genéricas
@@ -53,127 +82,18 @@ Herencia con clases genéricas
     };
 
 
-Sobrecarga de operadores 
-========================
+- Tener presente que si heredamos de una clase genérica ``QVector`` o ``std::vector`` ya no es necesario definir las características de almacenamiento en la clase derivada. Es decir, ya no debemos definir ``libre``, ``T * v``, ``cantidad``, ``get``, ``add`` o ``size``.
 
-.. figure:: images/clase02/sobrecarga_operadores.png
+Entregable Clase 03
+===================
 
-
-Ejemplo:
-========
-
-.. code-block::
-
-	class Cliente  {
-	private:
-	    int saldo;
-
-	public:
-	    Cliente() : saldo( 0 )  {
-	    }
-
-	    void operator+( int sumando )  {
-	        this->saldo += sumando;
-	    }
-
-	    void operator-( int sustraendo )  {
-	        this->saldo -= sustraendo;
-	    }
-
-	    bool operator<( Cliente otroCliente )  {
-	        if ( this->saldo < otroCliente.saldo )
-	            return true;
-	        return false;
-	    }
-	};
-
-	int main( int argc, char ** argv )  {
-	    Cliente juan;
-
-	    Cliente carlos;
-
-	    juan + 50;  // Suma 50 a su cuenta
-
-	    carlos + 100;  // Quita 100 a carlos
-
-	    if ( juan < carlos )  {
-	        qDebug() << "juan tiene menos";
-	    }
-
-	    return 0;
-	}
-
-
-
-Ejemplo:
-========
-
-- Modificar la clase genérica Listado sobrecargando ``operator+`` de tal forma que al sumar dos listados se obtenga un nuevo objeto Listado con los elementos consecutivos.
-
-.. code-block::
-
-	template< class T > class Listado  {
-	public:
-		Listado( int n = 10 );
-		bool add( T nuevo );
-		T get( int i ) const;
-		int length() const;
-		Listado< T > operator+( const Listado< T > otro );
-
-	private:
-		int cantidad;
-		int libre;
-		T *v;
-	};
-
-
-	template< class T > Listado< T >::Listado( int n ) : cantidad( n ), libre( 0 ), v( new T[ n ] )  {  
-
-	}
-
-	template< class T > bool Listado< T >::add( T nuevo )  {
-		if ( libre < cantidad )  {
-			v[ libre ] = nuevo;
-			libre++;
-			return true;
-		}
-		return false;
-	}
-
-
-	template< class T > T Listado< T >::get( int i ) const  {  return v[ i ];  }
-
-	template< class T > int Listado< T >::length() const  {  return libre;  }
-
-	template< class T > Listado< T > Listado< T >::operator+( const Listado< T > otro )  {
-		T vAux[ this->length() + otro.length() ];
-
-		int contador = 0;
-
-		for ( ; contador < this->length() ; contador++ )
-			vAux[ contador ] = this->get( contador );
-
-		for ( int i = 0 ; contador < ( this->length() + otro.length() ) ; contador++, i++ )
-			vAux[ contador ] = otro.get( i );
-
-		Listado< T > res( this->length() + otro.length() );
-
-		for ( int j = 0 ; j < contador ; j++ )
-			res.add( vAux[ j ] );
-
-		return res;
-	}
-
-
-Ejercicio 2:
-============
-
-- Sobrecargar el ``operador++`` para que duplique la cantidad máxima de elementos que puede contener el Listado y que también duplique los elementos que ya existían. 
-
-
-Ejercicio 3:
-============
-
-- Sobrecargar el ``operador+`` para que al recibir un nuevo elemento, que inserte una nueva celda (incrementando en 1 la cantidad máxima de elementos que puede contener) y que agregue ese nuevo elemento en la útima celda vacía.
-
-
+- Punto de partida: Utilizar el código fuente del proyecto que se creó durante esta clase que tiene definidos los métodos nuevos.
+- Agregar los siguientes dos métodos: ``borrar_del_final( int cuantos )`` y ``borrar_del_principio( int cuantos )``. 
+- Tener en cuenta que tenemos ya definidos métodos que borran elementos, entonces, utilizarlos para ahorrar tiempo de desarrollo.
+- En la función main crear un ``Listado< str::string >`` y agregar 8 cadenas
+- Borrar 2 elemnetos del final y borar 2 elementos del principio
+- Recorrer el Listado con un for y mostrar los elementos que quedan
+- Explicar a medida que se vaya haciendo el ejercicio
+- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
+- El link de Youtube se comparte con el docente por mensaje privado de Teams.
+- `Mesas de trabajo en Discord <https://discord.gg/TFKzMXrNCV>`_ 
