@@ -2,7 +2,7 @@
 
 .. _rcs_subversion:
 
-Clase 03 - PGE 2020
+Clase 03 - PGE 2021
 ===================
 (Fecha: 17 de agosto)
 
@@ -70,19 +70,6 @@ Clase 03 - PGE 2020
 - Modificar listado.h para que todos sus métodos queden definidos de manera off-line
 
 
-Herencia con clases genéricas
-=============================
-
-.. code-block::
-
-    template< class T > class Lista : public Listado< T >  {
- 
-        //////////
-
-    };
-
-
-- Tener presente que si heredamos de una clase genérica ``QVector`` o ``std::vector`` ya no es necesario definir las características de almacenamiento en la clase derivada. Es decir, ya no debemos definir ``libre``, ``T * v``, ``cantidad``, ``get``, ``add`` o ``size``.
 
 Entregable Clase 03
 ===================
