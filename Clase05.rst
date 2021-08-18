@@ -2,9 +2,9 @@
 
 .. _rcs_subversion:
 
-Clase 05 - PGE 2020
+Clase 05 - PGE 2021
 ===================
-(Fecha: 8 de septiembre)
+(Fecha: 24 de agosto)
 
 
 **Sobrecargando operadores en la clase genérica Listado**
