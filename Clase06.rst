@@ -195,10 +195,10 @@ Entregable Clase 06
 ===================
 
 - Punto de partida: Utilizar el código fuente del proyecto Ejemplo 2.
-- Sobrecargar en Persona el ``operator++`` de tal manera permita incrementar en un su edad.
+- Sobrecargar en Persona el ``operator++`` de tal manera permita incrementar en uno su edad.
 - Buscar la solución a este problema y explicar el resultado en el video. No es necesario desarrollar la solución en el video.
-- Explicar los inconvenientes que tuvo para encontrar la solución y comente también con quiénes trabajó, si fue en Discord, o si encontró la solución f´´acilmente en internet.
-- En la función main utilizar este operador. Debe quedar usado de la siguiente manera: ``carlos++;``.
+- Explicar los inconvenientes que tuvo para encontrar la solución y comente también con quiénes trabajó, si fue en Discord, o si encontró la solución fácilmente en internet.
+- En la función main utilizar este operador. Debería utilizarse de la siguiente manera: ``carlos++;``.
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
 - El link de Youtube se comparte con el docente por mensaje privado de Teams.
 - `Mesas de trabajo en Discord <https://discord.gg/TFKzMXrNCV>`_ 
