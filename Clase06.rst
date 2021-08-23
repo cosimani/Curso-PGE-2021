@@ -127,11 +127,6 @@ Ejemplo 2
 
 .. code-block:: c
 
-	struct Credencial  {
-	    int dni;
-	    QString nombre;
-	};
-
 	template< class T > class Persona  {
 	private:
 	    T id;
@@ -175,6 +170,11 @@ Ejemplo 2
 
 
 .. code-block:: c
+
+	struct Credencial  {
+	    int dni;
+	    QString nombre;
+	};
 
 	int main( int argc, char ** argv )  {
 	    Persona< int > juan( 36242 );
