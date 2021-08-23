@@ -84,7 +84,7 @@ Clase 05 - PGE 2021
 		return res;
 	}
 
-
+**Tener presente qué sucede cuando se crea un Listado de algún tipo de puntero. ¿Qué sucede en memoria?**
 
 
 Entregable Clase 05
