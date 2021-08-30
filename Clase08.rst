@@ -2,11 +2,7 @@
 
 .. _rcs_subversion:
 
-Clase 08 - PGE 2020
+Clase 08 - PGE 2021
 ===================
-(Fecha: 17 de septiembre)
+(Fecha: 2 de septiembre)
 
-
-**Opcionables**: `Descargar la última versión desde aquí <https://github.com/cosimani/Opcionables>`_
-
-**Mini examen**

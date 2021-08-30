@@ -2,395 +2,390 @@
 
 .. _rcs_subversion:
 
-Clase 07 - PGE 2020
+Clase 07 - PGE 2021
 ===================
-(Fecha: 15 de septiembre)
+(Fecha: 31 de agosto)
 
 
+Python, cuadernos de código y herramientas
+==========================================
 
-Ejercicio 2:
-============
+- Python
+- Spyder
+- Jupyter Notebook
+- Anaconda
+- Google Colab
 
-- Sobrecargar el ``operador++`` para que duplique la cantidad máxima de elementos que puede contener el Listado y que también duplique los elementos que ya existían. 
+.. figure:: images/clase06_pythom_spyder_jupyter_ana_colab.png
 
+Módulos y paquetes
+==================
 
-Ejercicio 3:
-============
+**Módulo**: Es un archivo Python cuyas utilidades (funciones, clases, etc.) se pueden usar desde otro archivo.
 
-- Sobrecargar el ``operador+`` para que al recibir un nuevo elemento, que inserte una nueva celda (incrementando en 1 la cantidad máxima de elementos que puede contener) y que agregue ese nuevo elemento en la útima celda vacía.
+- Supongamos el archivo ``matematicas.py``
 
+.. code-block:: python 
 
+	def sumar( a, b ) :
+	    return a + b
 
-Ejercicio 4:
-============
+	def restar( a, b ) :
+	    return a - b
 
-- Agregar la características a Mundo para que pueda heredar de cualquier clase, no sólo de Real y Virtual
-- Que compile y deje ejecutar la aplicación pero el toString publicar que el Mundo creado no es posible.
+- Podremos utilizar estas funciones de la siguiente manera:
 
+.. code-block:: python
 
+	import matematicas  # Esta línea importa todos los recursos del archivo matematicas.py
 
+	print( matematicas.sumar( 7, 5 ) )
+	print( matematicas.restar( 17, 15 ) )
 
+- Si sólo deseamos importar la función ``sumar`` hacemos:
 
-static
-======
+.. code-block:: python
 
-**Variables estáticas**
+	from matematicas import sumar
 
-- Al salir de su ámbito no pierde su valor
-- Sólo son conocidas dentro de su ámbito (pero igual "recuerdan su valor")
-- Se inicializan sólo la primera vez
+	print( sumar( 7, 5 ) )
 
-.. code-block:: c
+- Otras alternativas:
 
-	#include <QApplication>
-	#include <QDebug>
-
-	int funcion( int a = 2 )  {
-	    static int suma = 0;
-	    return ( suma += a );
-	}
-
-	int main( int argc, char ** argv )  {
-	    QApplication a( argc, argv );
-
-	    qDebug() << funcion();	    // 2
-	    qDebug() << funcion( 10 );	// 12
-	    qDebug() << funcion();	    // 14
-
-	    return 0;
-	}
-
-**Miembros estáticos**
-
-- Para cada instancia de una clase existe una copia de los miembros no-estáticos.
-- Pero hay una única copia de los estáticos para todas las instancias.
-- Pueden ser accedidas sin referencia a ninguna instancia concreta de la clase.
-- Los miembros estáticos no dependen de ninguna instancia para su existencia.
-- Existen incluso antes que la primera instancia de una clase.
-
-**¿Qué problema tiene este código?**
-
-.. code-block:: c
-
-	#include <QApplication>
-	#include <QDebug>
-
-	class A  {
-	public:
-	    static int x;
-	};
-
-	int main( int argc, char ** argv )  {
-	    QApplication a( argc, argv );
-
-	    A a1;
-	    qDebug() << a1.x;		// No reconoce x
-
-	    return 0;
-	}
-
-**¿Qué se publica?**
-
-.. code-block:: c
-
-	#include <QApplication>
-	#include <QDebug>
-
-	class A  {
-	public:
-	    static int x;
-	};
-
-	int A::x = 5;
-
-	int main( int argc, char ** argv )  {
-	    QApplication a( argc, argv );
-
-	    A a1, a2;
-	    qDebug() << a1.x;		// 5
-	    qDebug() << a2.x;		// 5
-
-	    a1.x = 9;
-	    qDebug() << a1.x;		// 9
-	    qDebug() << a2.x;		// 9
-
-	    return 0;
-	}
-
-- La modificación del valor x en el objeto a1 cambia dicha propiedad x en a2.
-- La definición int A::x = 5; solo son permitidas para miembros estáticos.
-
-**¿Qué error tiene el siguiente código?**
-
-.. code-block:: c
-
-	class B  {
-	    static const char* p1;        // privado por defecto
-
-	public:
-	    static const char* p2;        // declaración
-	    const char* p3;
-	};
-
-	const char* B::p1 = "Adios";     // Ok.  Definición
-	const char* B::p2 = "mundo";     // Ok
-	const char* B::p3 = "cruel";     // Error. No es estática. No se puede definir así.
-
-
-- No significa que las propiedades estáticas (privadas o protegidas) puedan ser accedidas directamente desde el exterior. Depende del modificador de acceso:
-
-.. code-block:: c
-
-	int main( int argc, char ** argv ) {
-	    QApplication a( argc, argv );
-
-	    qDebug() << B::p1;    // Error: no accesible!
-	    qDebug() << B::p2;    // Ok: -> "mundo"
-
-	    return 0;
-	}
-
-**Definición de miembros estáticos**
-
-- Si los miembros estáticos existen antes de cualquier instancia, entonces hay que definirlos. 
-- Los métodos estáticos sólo pueden acceder a miembros estáticos.
-
-**¿Qué problema tiene el siguiente código?**
-
-.. code-block:: c
-
-	class C  {
-	    static int y;
-
-	public: 
-	    int x;
-	    static int* p;
-	    static const char* c;
-	    static int getY()  {  return y;  }
-	    static int getX()  {  return x;  }	// No compila. x no es estático.
-	};
-
-	int C::y = 1;          		// no se debe poner static
-	int* C::p = &C::y;     		
-	const char* C::c = "ABC";   
-
-**El constructor y miembros estáticos**
-
-- La inclusión de un constructor no evita tener que definir los miembros estáticos.
-- Recordar que el constructor es invocado cuando se instancia.
-- El constructor puede modificar los valores de los miembros estáticos pero no inicializarlos.
-
-**¿El siguiente código compila?**
-
-.. code-block:: c
-
-	class D  {
-	    static int y;
-
-	public: 
-	    int x;
-
-	    // El constructor no puede modificar así los miembros estáticos
-	    D() : y( 10 ), x( 20 )  {  }  
-	};
-
-	int D::y = 1;
-
-- Se debería usar un constructor como el que sigue:
-
-.. code-block:: c
-
-	D() : x( 20 )  {
-	    y = 10;
-	}
-
-**Particularidades de la notación**
-
-- Los miembros estáticos pueden ser accedidos con :: con la notación C::miembro.
-- No es necesario utilizar ninguna instancia concreta de la clase.
-
-**¿Qué publicaría el siguiente código?**
-
-.. code-block:: c
-
-	#include <QApplication>
-	#include <QDebug>
-
-	class E  {
-	public:
-	    static int x;      // miembro estático
-	    E( int i = 12 )  {  x = i;  }   
-
-	};
-
-	int E::x = 13;          // definición de miembro
-
-	int main( int argc, char ** argv )  {
-	    QApplication( argc, argv );
-
-	    qDebug() << E::x;   // 13
-	    E e1;
-	    qDebug() << E::x;   // 12
-
-	    return 0;
-	}
-
-
-Ejercicio 5:
-============
-
-- Utilizar la misma clase Poste para sobrecargar operator+ para que sume un objeto Poste con un int.
-
-
-- Esa sobrecarga nos permitirá hacer Poste suma = p1 + 5;
-
-
-- Qué pasa si queremos		 Poste suma = 5 + p1;
-- Debemos hacerlo sobrecargando el operador global.
-
-
-**Sobrecarga de operadores globales**
-
-.. figure:: images/clase03/operadores_globales.png
-
-
-Ejercicio 6:
-============
-
-- Utilice la clase genérica Listado dentro de un nuevo proyecto.
-- En la función main crear un listado con 5 QWidget
-- Al iniciar, usar un for para extraerlos y mostrarlos como ventanas independientes.
-- Prestar atención en el problema, y trate de hacerlo funcionar.
-
-
-
-
-Ejercicio 7:
-============
-
-- Definir una clase genérica ``MiVector`` que herede de ``QVector< T >`` y que permita ordenar de menor a mayor cualquier elemento.
-- Considere que para ordenar de menor a mayor algún elemento se necesitará comparar un elemento con otro.
-- Por lo tanto, si deseamos que ``MiVector`` pueda contener elementos de cualquier tipo, y además deseamos ordenarlos, entonces estos elementos deberan cumplir la caraccterística de ser "comparables". Esto es muy familiar cuando se trabaja en Java.
-- Definir clases comparables eligiendo la/las característica/s que permitan comparar dichos objetos entre ellos.
-- Entre las clases que se pueden definir como comparables están: ``Persona``, ``Poste``, ``Cliente``, ...
-- Probar el funcionamiento del ordenamiento utilizando ``MiVector< Persona >``, ``MiVector< Poste >``, ``MiVector< int >``.
-- Mostrar los resultados en un ``QTextEdit`` en lugar de visualizarlo directamente por consola.
-- ¿Qué pasaría con el ordenamiento si se utilizan punteros como elementos, por ejemplo, ``MiVector< Persona * >``, ``MiVector<Poste*>``.
-
-
-**Copiar objetos**
-
-- El operador = supone la asignación del operando de la derecha en el izquierdo
-- Si ``p1`` y ``p2`` son objetos de la clase ``Persona``
-
-.. code-block:: c
+.. code-block:: python
 	
-	p1 = p2;  // Esta asignación copia los valores de p2 en p1
+	from matematicas import sumar, restar
 
-- El operador = supone la asignación miembro a miembro
-- En este caso, el compilador define automáticamente el ``operator=``
-- Realiza la asignación miembro a miembro
-- Por otro lado, cuando se crea un nuevo objeto
+	from matematicas import *
 
-.. code-block:: c
+
+**Paquetes**: Es una carpeta que contiene varios módulos. 
+
+.. code-block:: bash 
+
+	operaciones/
+	    |-- __init__.py    # Este archivo indica que la carpeta operaciones es un paquete y no una simple carpeta 
+	    |-- matematicas.py
+	    |-- matrices.py
+
+
+- Alternativas para importar
+
+.. code-block:: python
 	
-	Persona p1 = p2; 
+	import operaciones.matematicas
 
-- No implica ninguna asignación sino que se invoca a un constructor especial (constructor copia).
-- Es equivalente a:
+	from operaciones import matematicas
 
-.. code-block:: c
-	
-	Persona p1( p2 );
+	from operaciones.matematicas import sumar
 
 
-**Constructor copia**
+Biblioteca numpy
+================
 
-.. figure:: images/clase04/constructor_copia.png
-
-**Operador de asignación**
-
-.. figure:: images/clase04/operador_asignacion.png
+- Vectores, matrices, gran colección de funciones matemáticas.
+- `Documentación de numpy <https://numpy.org/doc/stable/index.html>`_ 
 
 
+**Algunos ejemplos de su uso**
+
+.. code-block:: python
+
+	import numpy as np
+
+	lista = [ 25., 8., 20., 75. ] 
+	print( type( lista ), lista )
+
+	v = np.array( lista )  # Transformo la lista en vector
+	print( '\nv =', v )  # El vector no lleva comas separando los elementos
+	print( 'tipo de v:', type( v ) )  # el tipo es numpy.ndarray
+	print( 'longitud de v:', len( v ) )
+
+	# máximo y mínimo valor de v
+	print( 'máximo de v:', v.max(), 'o', np.max( v ) )  # función de numpy.ndarray: np.max()
+	print( 'mínimo de v:', v.min(), 'o', np.min( v ) )
+
+
+.. code-block:: python
+
+	import numpy as np
+
+	u = np.array( [ 5, 9, 10, -1 ] )  # Transforma la lista en vector
+	v = np.array( [ -2, 0, 5, 4 ] )
+
+	print( "vector u =", u )
+	print( "vector v =", v )
+
+	z = u + v 
+	print( "z = u + v  ->  z =", z )
+
+	w = 2 * z
+	print( "2 * z =", w )
+
+	t = w - 3
+	print( "Restamos 3 a cada elemento del vector anterior", t )
+
+.. code-block:: python
+
+	import numpy as np
+
+	v = np.zeros( 4, dtype = np.float32 )
+	u = np.ones( 4, dtype = np.int64 )
+	w = np.full( 4, 128, dtype = np.int8 )
+	print( "v =", v,"   u =", u, "   w =", w )
+
+.. code-block:: python
+
+	import numpy as np
+
+	s = np.arange( 5, 26, 3 )
+	print( s, type( s ), type( s[ 0 ] ) )
+
+	t = s.astype( np.float32 )  # cambiamos el tipo de datos al vector s a float32
+	print( t, type( t ), type( t[ 0 ] ) )
+
+	r = t[ 0 : 3 ]
+	print( '\nLos 3 primeros elementos de t son:', r )
+	print( 'Muestra 1 =', t[ 3 : ] )
+	print( 'Muestra 2 =', t[ : ] )
+	print( 'Muestra 3 =', t[ : 5 ] )
+
+	p = t[ [ 1, 3, 5 ] ]
+	print( 'Vector con los lugares pares de t:', p )
+
+	lineal = np.linspace( 0, 1, 5 )
+	print( lineal )
 
 
 
+Biblioteca matplotlib
+=====================
 
-Para Opcionables y Mini Examen
-==============================
-
-:Tarea para Clase 8:
-	Completar y estudiar exhaustivamente la clase Listado
-
-	Estudiar sobrecarga de operadores y templates
-
-	Ver `Tutorial Qt QVector <https://www.youtube.com/watch?v=Z9u2yDPh57U>`_ de `Videos tutoriales de Qt <https://www.youtube.com/playlist?list=PL54fdmMKYUJvn4dAvziRopztp47tBRNum>`_
-
-	Ver `Tutorial Qt QList <https://www.youtube.com/watch?v=xx5wIjUwlg8>`_ de `Videos tutoriales de Qt <https://www.youtube.com/playlist?list=PL54fdmMKYUJvn4dAvziRopztp47tBRNum>`_
-
-	Ver `Tutorial C++ vector <https://www.youtube.com/watch?v=dNb468_AJQI>`_ de `Videos tutoriales de C++ <https://www.youtube.com/playlist?list=PL54fdmMKYUJvS32aLptKVC0AH9bwsavzi>`_
+- Generador de gráficos.
+- `Documentación de matplotlib <https://matplotlib.org/>`_ 
 
 
-**Clase genérica con argumento por defecto**
+**Algunos ejemplos de su uso**
 
-.. figure:: images/clase03/por_defecto.png
+.. code-block:: python
 
-**Declaración adelantada**
+	import matplotlib.pyplot as plt
+	import numpy as np
 
-.. figure:: images/clase03/declaracion_adelantada.png
+	n = 21
+	x = np.linspace( 0, 2, n )  # del 0 al 2 (inclusive), en n=21 números equiespaciados
+	x2 = x * x
+	x3 = x ** 3
+	plt.plot( x, x, 'b.', x, x2, 'rd', x, x3, 'g^' )
 
-**Miembros estáticos**
+	plt.xlim( -1, 2.5 )  # límites para el eje x
+	plt.gca().legend( ( 'Lineal', 'Cuadrática', 'Cúbica' ) )
 
-.. figure:: images/clase03/miembros_estaticos.png
-
-
-Ejercicio 8:
-==========
-
-- Definir la clase ``LineaDeTexto`` que herede de ``QLineEdit``
-- Sobrecargar el ``operator+`` ``operator=`` y el constructor copia para que se puede ejecutar la siguiente línea de código:
-	
-.. code-block:: c
-	
-	linea = linea1 + linea2;  
-	// Los tres son objetos LineaDeTexto y la suma devuelve un LineaDeTexto con los textos concatenados
-	
-
-Ejercicio 9:
-============
-
-- Haga funcionar la siguiente función ``main()``
+	plt.show()
 
 
-.. code-block:: c
-	
-	#include <QApplication>
-	#include "lineadetexto.h"
+.. code-block:: python
 
-	int main( int argc, char ** argv )  {
-	    QApplication a( argc, argv );
+	import matplotlib.pyplot as plt
+	import numpy as np
 
-	    LineaDeTexto linea;
+	n = np.arange( 0, 5, 1 )
+	y = np.exp( np.sin( n ) )
 
-	    {
-	        LineaDeTexto l1 = "Hola";
-	        LineaDeTexto l2 = "che";
-
-	        linea = l1 + l2;
-	    }
-
-	    linea.show();  // Esta línea mostrará un QLineEdit con el texto 'Hola che'
-
-	    return a.exec();
-	}
+	plt.stem( n, y )
+	plt.show()
 
 
-Ejercicio 10:
-============
+.. code-block:: python
 
-- Incorporar LineaDeTexto a un proyecto de Qt para promocionarlo en QtDesigner
-- Crear un Formulario con QtDesigner que tenga 4 LineaDeTexto promocionadas
-- El formulario será para alta de personas
-- Un campo para Nombre, otro para Apellido, para DNI y uno para Nombre completo.
-- Esta última LineaDeTexto concatenará en tiempo real el nombre y apellido usando el operator+ de LineaDeTexto
+	import numpy as np
+	import matplotlib.pyplot as plt
+
+	# Variables independientes
+	x1 = np.linspace( 1, 12, 12 )
+	x2 = np.linspace( 1, 12, 12 ) + 2
+	x3 = np.linspace( 1, 12, 12 )
+	x4 = x2 + x3
+
+	# Para varios gráficos es útil usar la función subplots y luego axs
+	# Documentación de subplots en: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html
+	fig, axs = plt.subplots( nrows = 2, ncols = 2 )  
+	fig.set_figwidth( 10 )
+	fig.set_figheight( 6 )
+
+	axs[ 0, 0 ].plot( x1, x2 )
+	axs[ 0, 0 ].set_title( 'Gráfico 1' )
+	axs[ 0, 0 ].set_xlabel( 'x' )
+	axs[ 0, 0 ].set_ylabel( 'y' )
+
+	axs[ 0, 1 ].plot( x1, x3 )
+	axs[ 0, 1 ].set_title( 'Gráfico 2' )
+	axs[ 0, 1 ].set_xlabel( 'x' )
+	axs[ 0, 1 ].set_ylabel( 'y' )
+
+
+	axs[ 1, 0 ].plot( x1, x4 )
+	axs[ 1, 0 ].set_title( 'Gráfico 3' )
+	axs[ 1, 0 ].set_xlabel( 'x' )
+	axs[ 1, 0 ].set_ylabel( 'y' )
+
+	axs[ 1, 1 ].scatter( x1, x4 )  # scatter plot = Diagrama de dispersión
+	axs[ 1, 1 ].set_title( 'Gráfico 4' )
+	axs[ 1, 1 ].set_xlabel( 'x' )
+	axs[ 1, 1 ].set_ylabel( 'y' )
+
+	plt.show()
+
+
+.. code-block:: python
+
+	import numpy as np
+	import matplotlib.pyplot as plt
+
+	x1 = np.linspace( 1, 12, 12 )
+	x2 = np.linspace( 1, 12, 12 ) + 2
+
+	fig, axs = plt.subplots( nrows = 2, ncols = 2 )  
+
+	axs[ 0, 0 ].plot( x1, x2 )
+	axs[ 0, 1 ].plot( x1, x2, 'g--d' )  
+	axs[ 1, 0 ].scatter( x1, x2 )  
+	axs[ 1, 1 ].stem( x1, x2 )
+	plt.show()
+
+
+
+`Iteraciones y decisiones (ipynb) <https://colab.research.google.com/drive/1u-X1uIGoHCKf_QRb1jTdBZ_Ap_Z7hhYq?usp=sharing>`_ 
+================================
+
+
+**Sentencia if**
+
+.. code-block:: python
+
+	edad = int( input( 'Ingrese edad: ' ) )
+
+	if edad < 0 :
+	    print( 'Error' )
+	elif edad < 18 :
+	    print( 'Menor de edad' )
+	else :
+	    print( 'Mayor de edad' )
+
+	# Operadores para comparar: ==  !=  <  >  <=  >=
+
+**Sentencia for**
+
+.. code-block:: python
+
+	suma = 0
+	mis_numeros = [ 4, 8, 12, 18 ] 
+
+	# la variable numero designará a los elementos de la lista
+	for numero in mis_numeros :
+	    suma = suma + numero
+	    print( 'Esto se imprime en cada ciclo. Suma parcial =', suma )
+
+	print( 'Esto se imprime fuera del ciclo' )
+	print( 'La lista es:', mis_numeros )
+	print( 'La suma de los números de la lista es:', suma )
+
+
+	print( '\nUn for para range de 0 a 3' )
+	for i in range( 4 ) :
+    	print( i )
+
+    imagenes = [ 'impulso.jpg', 'gráficos.png', 'esquema.jpg' ]
+	for imagen in imagenes :
+	    print ( '\nEl nombre de la imagen es: {0} y el largo ' \
+	            'del nombre es: {1}'.format( imagen, len( imagen ) ) )    
+
+	mi_lista = [ 'manzana', 'bananas', 'uvas', 'peras' ]
+	# La primera variable (c en nuestro caso) es el contador
+	# La segunda variable (valor en nuestro caso) es precisamente el valor almacenado en cada posición
+	# El segundo parámetro de eumerate es desde dónde comienza la enumeración 
+	for c, valor in enumerate( mi_lista, 0 ) :
+	    print( '\n', c, valor )
+
+**Sentencia while**
+
+.. code-block:: python
+
+	n = 5
+	print( 'Loop 1 started.' )
+	while n > 0 :
+	    n -= 1
+	    if n == 2 :
+	        break
+	    print( n )
+	print( 'Loop 1 ended.' )
+
+	n = 5
+	print( 'Loop 2 started.' )
+	while n > 0 :
+	    n -= 1
+	    if n == 2 :
+	        continue
+	    print( n )
+	print( 'Loop 2 ended.' )
+
+
+`Sonidos humanamente audibles (ipynb) <https://colab.research.google.com/drive/1CZ_HpWmftsejvJAuUKM54AiCrQVE1km-?usp=sharing>`_ 
+=====================================
+
+- Aproximadamente entre 20 Hz y 20 kHz
+
+.. code-block:: python
+
+	import numpy as np
+
+	# Para reproducir audio en la notebook.
+	from IPython.display import Audio, display
+
+	sample_rate = 44100
+
+	segundos_de_audio = 2
+	n = np.linspace( 0, segundos_de_audio, sample_rate * segundos_de_audio )
+	tono = 440
+	data = np.sin( 2 * np.pi * tono * n )
+
+	data
+
+	def generador_de_tono( frecuencia, duracion, sample_rate, A = 1 ) :
+	    n = np.linspace( 0, duracion, sample_rate * duracion )
+	    return np.sin( 2 * np.pi * frecuencia * n )
+
+	la440 = generador_de_tono( 440, 1, 44100 )
+
+	Audio( data = la440, rate = 44100 )
+
+	# Todas las notas comenzando desde el 'La'
+	#   La La# Si Do Do# Re Re# Mi Fa Fa# Sol Sol# La
+	n_0 = 440
+	notas = [ 440 * 2**( n / 12 ) for n in range( 0, 13 ) ]
+
+	# Tono de cada nota
+	muestras_de_todas_las_notas = [] 
+	for frecuencia_de_nota in notas : 
+	     muestras_de_todas_las_notas.append( generador_de_tono( frecuencia_de_nota, 1, 44100 ) )
+
+	index_notas = [ 0, 2, 4, 5, 7, 9, 11, 12 ]
+	escala_La_mayor = [ muestras_de_todas_las_notas[ i ] for i in index_notas ]
+
+	muestras_escala_La_mayor = np.concatenate( escala_La_mayor )
+
+	Audio( muestras_escala_La_mayor, rate = 44100 )
+
+
+
+Entregable Clase 07
+===================
+
+- Punto de partida: Cuaderno Colab llamado entregable05.ipynb
+- Reproducir la escala pentatónica menor de La
+- Buscar información donde desee.
+- Deben sonar las notas que se pueden escuchar `Aquí <https://es.wikipedia.org/wiki/Archivo:PentMinor.mid>`_ 
+- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
+- El link de Youtube se comparte con el docente por mensaje privado de Teams.
+
+
