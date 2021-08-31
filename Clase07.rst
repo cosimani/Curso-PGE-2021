@@ -381,7 +381,7 @@ Biblioteca matplotlib
 Entregable Clase 07
 ===================
 
-- Punto de partida: Cuaderno Colab llamado entregable05.ipynb
+- Punto de partida: Cuaderno Colab llamado entregable07.ipynb
 - Reproducir la escala pentatónica menor de La
 - Buscar información donde desee.
 - Deben sonar las notas que se pueden escuchar `Aquí <https://es.wikipedia.org/wiki/Archivo:PentMinor.mid>`_ 
