@@ -255,7 +255,7 @@ Biblioteca matplotlib
 
 
 
-`Iteraciones y decisiones (ipynb) <https://colab.research.google.com/drive/1u-X1uIGoHCKf_QRb1jTdBZ_Ap_Z7hhYq?usp=sharing>`_ 
+`Iteraciones y decisiones (ipynb) <https://colab.research.google.com/drive/1AKFdK7Cr7kovUoiSwt9hqz6Zra3THmQb?usp=sharing>`_ 
 ================================
 
 
@@ -330,7 +330,7 @@ Biblioteca matplotlib
 	print( 'Loop 2 ended.' )
 
 
-`Sonidos humanamente audibles (ipynb) <https://colab.research.google.com/drive/1CZ_HpWmftsejvJAuUKM54AiCrQVE1km-?usp=sharing>`_ 
+`Sonidos humanamente audibles (ipynb) <https://colab.research.google.com/drive/1HqBx7K9EH9fG0DXtqDiiMD8lv4pGLdpb?usp=sharing>`_ 
 =====================================
 
 - Aproximadamente entre 20 Hz y 20 kHz
