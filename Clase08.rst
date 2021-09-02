@@ -317,10 +317,12 @@ Entregable Clase 08
 ===================
 
 - Punto de partida: Crear un cuaderno Colab llamado entregable08.ipynb copiando el contenido visto e esta clase.
-- Utilizando la notebook de Colab grabe con el micrófono un tono de 440 Hz generado con el generador online y también grabe la correspondiente nota con el teclado virtual.
+- Utilizando la notebook de Colab grabe con el micrófono un tono de 220 Hz generado con el generador online y también grabe la correspondiente nota con el teclado virtual que genere un espectro de frecuencias similar.
 - Modifique el código para visualizar las dos grabaciones.
-- Compare los espectros de ambas grabaciones y realice algunos comentarios de lo que observa.
+- Si tiene un instrumento (guitarra, bajo, flauta, voz, etc.), úselo para generar la nota.
+- Compare los espectros de las grabaciones y realice algunos comentarios de lo que observa.
 - Se recomienda trabajar con los demás estudiantes para llegar a la resolución más rápidamente.
+- Considerar que si se está grabando el video de este entregable con OBS, posiblemente el OBS bloquee el micrófono para grabar desde la notebook. Así que ya deberá dejar grabadas las notas.
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
 - El link de Youtube se comparte con el docente por mensaje privado de Teams.
 
