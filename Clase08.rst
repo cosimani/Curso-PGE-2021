@@ -316,13 +316,11 @@ Biblioteca SciPy
 Entregable Clase 08
 ===================
 
-- Punto de partida: Cuaderno Colab llamado entregable07.ipynb
+- Punto de partida: Crear un cuaderno Colab llamado entregable08.ipynb copiando el contenido visto e esta clase.
 - Utilizando la notebook de Colab grabe con el micrófono un tono de 440 Hz generado con el generador online y también grabe la correspondiente nota con el teclado virtual.
 - Modifique el código para visualizar las dos grabaciones.
 - Compare los espectros de ambas grabaciones y realice algunos comentarios de lo que observa.
-- Se pide para este entregable grabar con OBS el video y subirlo a Youtube.
 - Se recomienda trabajar con los demás estudiantes para llegar a la resolución más rápidamente.
-- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1Qpp9mmUwuIUEbvrd_oqsQGuPOO9i1YPlHa_wBWTS6co/edit?usp=sharing>`_ 
-- El video se publica en Youtube (No listado) compartiendo el link con el docente por mensaje privado de Teams.
-
+- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
+- El link de Youtube se comparte con el docente por mensaje privado de Teams.
 
