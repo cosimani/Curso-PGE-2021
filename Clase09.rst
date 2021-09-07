@@ -248,7 +248,7 @@ Entregable Clase 09
 - Utilizar OpenCV para colocar tu nombre centrado en la parte inferior de la imagen.
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
 - El link de Youtube se comparte con el docente por mensaje privado de Teams.
-- En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente.
+- En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente antes de medianoche.
 
 
 
