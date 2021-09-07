@@ -220,7 +220,8 @@ visor.py
 
 	deactivate                                   # Desactivamos el entorno virtual
 
-	# Para borrar el entorno virtual hay que borrar la carpeta donde se creó -> C:\Cosas\2021\PGE2021\EntornosVirtuales\QtCamera
+	# Para borrar el entorno virtual hay que borrar la carpeta donde se creó
+	# -> C:\Cosas\2021\PGE2021\EntornosVirtuales\QtCamera
 
 
 **Para linux**
