@@ -191,7 +191,8 @@ visor.py
 
 	.\QtCamera\Scripts\activate  # Activamos el entorno virtual
 
-	# Si aparece un mensaje Warning diciendo que hay una versión nueva de pip, podemos ejecutar el comando que nos recomienda
+	# Si aparece un mensaje Warning diciendo que hay una versión nueva de pip, 
+	# podemos ejecutar el comando que nos recomienda
 
 	pip freeze  # Revisamos el listado de bibliotecas instaladas en el entorno virtual
 
