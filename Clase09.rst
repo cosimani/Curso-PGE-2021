@@ -209,7 +209,7 @@ visor.py
 
 - Módulo *venv*
 - `Documentación de venv <https://docs.python.org/3/library/venv.html>`_ 
-- Adaptar los siguientes comandos a lo visto en la `Clase 01 <https://github.com/cosimani/Curso-PIII-2021/blob/main/Clase01.rst>`_ 
+- Adaptar los siguientes comandos a lo visto anteriormente. 
 - Este módulo ya viene instalado con Python (quizás debemos asegurarnos de esto durante la instalación)
 
 .. code-block:: bash 
