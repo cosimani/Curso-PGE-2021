@@ -48,7 +48,8 @@ Creación de entorno virtual
 
 	deactivate  # Desactivamos el entorno virtual 
 	
-	# Para borrar el entorno virtual hay que borrar la carpeta donde se creó -> C:\Cosas\2021\PGE2021\EntornosVirtuales\QtCamera 
+	# Para borrar el entorno virtual hay que borrar la carpeta donde se creó
+	# -> C:\Cosas\2021\PGE2021\EntornosVirtuales\QtCamera 
 
 	# Si desea actualizar la versión de la herramienta pip, ejecutar lo siguiente:
 	python.exe -m pip install --upgrade pip
