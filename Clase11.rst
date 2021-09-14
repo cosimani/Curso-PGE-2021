@@ -29,9 +29,9 @@ static
 	int main( int argc, char ** argv )  {
 	    QApplication a( argc, argv );
 
-	    qDebug() << funcion();	    // 2
-	    qDebug() << funcion( 10 );	// 12
-	    qDebug() << funcion();	    // 14
+	    qDebug() << funcion();	    
+	    qDebug() << funcion( 10 );	
+	    qDebug() << funcion();	    
 
 	    return 0;
 	}
