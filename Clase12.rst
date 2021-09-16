@@ -33,7 +33,8 @@ Clase 12 - PGE 2021
 	Persona p1( p2 );
 
 
-**Constructor copia**
+Constructor copia
+=================
 
 .. code-block:: c
 
@@ -55,7 +56,8 @@ Clase 12 - PGE 2021
 - A veces es necesario definir un constructor copia explícito
 
 
-**Operador de asignación**
+Operador de asignación
+======================
 
 - El operador de asignación oficial es análogo al constructor copia oficial
 - El compilador lo define si no hay una versión explícita
