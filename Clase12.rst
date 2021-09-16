@@ -74,7 +74,10 @@ Operador de asignación
 Entregable Clase 12
 ===================
 
-- Punto de partida: 
+- Punto de partida: Utilizar el código desarrollado en clase para agregar lo que pide este entregable.
+- Crear un QVector< QWidget > y agregar 3 objetos (puede hacerlo directamente en la función main).
+- Tener en cuenta que no son punteros, sino objetos concretos.
+- Usar un for para extraerlos y mostrarlos como ventanas independientes.
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
 - El link de Youtube se comparte con el docente por mensaje privado de Teams.
 - En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente antes de medianoche.
