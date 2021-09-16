@@ -35,9 +35,38 @@ Clase 12 - PGE 2021
 
 **Constructor copia**
 
-.. figure:: images/clase04/constructor_copia.png
+.. code-block:: c
+
+	Persona( const Persona & persona );	
+
+- "Copiar" un objeto supone la creación de otro objetos
+- Puede ser una copia física o lógica
+- La copia completa o física de objetos grandes es costosa
+- Siempre que se necesite crear un nuevo objeto se llama (o invoca) al constructor copia. 
+
+:Se invoca al constructor copia en los siguientes momentos:
+	- Cuando se pasa un objeto como argumento
+	- Cuando algún método o función devuelve un objeto
+	- Cuando se crea un objeto mediante asignación
+	- Cuando se lanza una excepción
+
+- El compilador crea un constructor copia oficial cuando no se define explícitamente
+- Este constructor realiza un clon exacto miembro a miembro
+- A veces es necesario definir un constructor copia explícito
+
 
 **Operador de asignación**
+
+- El operador de asignación oficial es análogo al constructor copia oficial
+- El compilador lo define si no hay una versión explícita
+- La diferencia con el operador de asignación es que ambos objetos deben ser creados previamente
+
+.. code-block:: c
+
+	Persona & operator=( const Persona & persona );
+
+- Hay inconvenientes con el constructor copia oficial cuando los miembros son punteros
+- Igual sucede con el operador de asignación oficial	
 
 .. figure:: images/clase04/operador_asignacion.png
 
