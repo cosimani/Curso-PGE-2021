@@ -70,9 +70,6 @@ Operador de asignación
 - Hay inconvenientes con el constructor copia oficial cuando los miembros son punteros
 - Igual sucede con el operador de asignación oficial	
 
-.. figure:: images/clase04/operador_asignacion.png
-
-
 
 Entregable Clase 12
 ===================
