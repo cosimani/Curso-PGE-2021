@@ -10,26 +10,76 @@ Clase 13 - PGE 2021
 
 **Clase genérica con argumento por defecto**
 
-.. figure:: images/clase03/por_defecto.png
+- El tipo puede omitirse pero no el ``<>``
+
+.. code-block:: c
+	
+	template < class T = Real > class Mundo : public T  {
+	private:
+	    QString nombre;
+
+	public:
+	    Mundo( QString nombre, int dato ) : T( dato ), nombre( nombre )  {  }
+	};
+
+	int main( int argc, char ** argv )  {
+	    Mundo<> mundo1( "Tierra", 10000 );
+	    Mundo<> * mundo2 = new Mundo<>( "Marte", 256 );
+	    Mundo< Virtual > mundo3( "Pacman", 16 );
+
+	    return 0;
+	}
+
+	
 
 **Declaración adelantada**
 
-.. figure:: images/clase03/declaracion_adelantada.png
+- Una clase genérica puede tener una declaración adelantada:
+
+.. code-block:: c
+	
+	template < class T > class Listado;
+
+
+- Pero debe ser definida antes de ser usada:
+
+.. code-block:: c
+	
+	template < class T > class Listado  {
+
+
+	};
+
 
 **Miembros estáticos**
 
-.. figure:: images/clase03/miembros_estaticos.png
+.. code-block:: c
+	
+	template < class T > class Listado  {
+	public:
 
+	    static bool activado;
+
+	};
+
+	template < class T > bool Listado< T >::Activado = false;
 
 
 **Sobrecarga de operadores globales**
 
-.. figure:: images/clase03/operadores_globales.png
+- Un operador global es una función que no pertenece a ninguna clase.
+
+.. code-block:: c
+	
+	Poste operator+( int sumando, Posta otro )  {
+	    Poste res;
+	    res.setAltura( sumando + otro.getAltura() );
+	    return res;
+	}
 
 
-
-Ejercicio
-=========
+Ejemplo
+=======
 
 - Utilizar la clase Poste para sobrecargar operator+ para que sume un objeto Poste con un int.
 
@@ -37,34 +87,6 @@ Ejercicio
 
 - Qué pasa si queremos		 Poste suma = 5 + p1;
 - Debemos hacerlo sobrecargando el operador global.
-
-
-Ejercicio
-=========
-
-- Haga funcionar la siguiente función ``main()``
-
-.. code-block:: c
-	
-	#include <QApplication>
-	#include "lineadetexto.h"
-
-	int main( int argc, char ** argv )  {
-	    QApplication a( argc, argv );
-
-	    LineaDeTexto linea;
-
-	    {
-	        LineaDeTexto l1 = "Hola";
-	        LineaDeTexto l2 = "che";
-
-	        linea = l1 + l2;
-	    }
-
-	    linea.show();  // Esta línea mostrará un QLineEdit con el texto 'Hola che'
-
-	    return a.exec();
-	}
 
 
 
@@ -205,4 +227,44 @@ Clase QCompleter
 	QCompleter * completer = new QCompleter( lista, this );
 	completer->setCaseSensitivity( Qt::CaseInsensitive );
 	ui->leUsuario->setCompleter( completer );
+
+
+
+Ejercicio
+=========
+
+- Haga funcionar la siguiente función ``main()``
+
+.. code-block:: c
+	
+	#include <QApplication>
+	#include "lineadetexto.h"
+
+	int main( int argc, char ** argv )  {
+	    QApplication a( argc, argv );
+
+	    LineaDeTexto linea;
+
+	    {
+	        LineaDeTexto l1 = "Hola";
+	        LineaDeTexto l2 = "che";
+
+	        linea = l1 + l2;
+	    }
+
+	    linea.show();  // Esta línea mostrará un QLineEdit con el texto 'Hola che'
+
+	    return a.exec();
+	}
+
+
+Entregable Clase 13
+===================
+
+- Punto de partida: Empty project
+- Desarrollar la clase LineaDeTexto que se menciona en el ejercicio.
+- Mostrar funcionando la función main.
+- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
+- El link de Youtube se comparte con el docente por mensaje privado de Teams.
+- En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente antes de medianoche.
 
