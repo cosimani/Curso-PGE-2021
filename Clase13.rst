@@ -138,8 +138,6 @@ Captura de eventos con eventFilter
 	#include <QKeyEvent>
 	#include <QImage>
 
-
-
 	Principal::Principal( QWidget * parent ) : QWidget( parent ), 
 	                                           ui( new Ui::Principal ),
 	                                           rotacion( 0 ), 
@@ -206,27 +204,6 @@ Captura de eventos con eventFilter
 	    // que no estamos capturando nosotros.
 	    return QWidget::eventFilter( obj, e );
 	}
-
-
-Clase QCompleter
-================
-
-- Permite completar palabras que está escribiendo el usuario en un QLineEdit
-- Se basa en un listado de palabras:
-
-.. code-block::
-
-	QCompleter( const QStringList & list, QObject * parente = nullptr );
-
-
-.. code-block::
-
-	QStringList lista;
-	lista << "Jorge << "Miguel" << "Marcos" << "Luis";
-
-	QCompleter * completer = new QCompleter( lista, this );
-	completer->setCaseSensitivity( Qt::CaseInsensitive );
-	ui->leUsuario->setCompleter( completer );
 
 
 
