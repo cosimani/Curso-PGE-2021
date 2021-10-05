@@ -31,7 +31,8 @@ Clase QTreeWidget
 
 
 	
-**Crear un popup para sugerencias (estilo QCompleter pero mejor)**
+Crear un popup para sugerencias (un QCompleter mejorado)
+========================================================
 
 .. code-block::
 
