@@ -65,8 +65,6 @@ Entregable Clase 17
 - Crear un editor de código fuente (como el NotePad++ o el Sublime Text).
 - Utilice un buen paquete de íconos.
 - Que tenga las funcionalidades más comunes de los editores de texto.
-- Crear un Login con QtDesigner con dos FFLine, uno para el usuario y otro para la clave.
-- Alimentar la base de datos de `sugerencias de Google <https://google.com/complete/search?hl=en&output=toolbar&q=hola>`_   
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
 - El link de Youtube se comparte con el docente por mensaje privado de Teams.
 - En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente antes de medianoche.
