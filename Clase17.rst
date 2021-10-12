@@ -20,7 +20,9 @@ QMainWindow
 
 .. figure:: images/clase17_qicon.png
 
-:Buscar íconos aquí: http://findicons.com/
+:Buscar íconos aquí: http://findicons.com/ 
+
+:También aquí: https://boxicons.com/
 
 Uso de una clase propia con QtDesigner
 ======================================
