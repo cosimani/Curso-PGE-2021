@@ -53,9 +53,9 @@ Uso de una clase propia con QtDesigner
 Videos complementarios sobre QMainWindow
 ========================================
 
-* `Video 1- https://youtu.be/ldxQrBTjio0 <https://youtu.be/ldxQrBTjio0>`_
+* `Explicación de QMainWindow - https://youtu.be/ldxQrBTjio0 <https://youtu.be/ldxQrBTjio0>`_
 
-* `Video 2- https://youtu.be/fNS2Wyf-PaY <https://youtu.be/fNS2Wyf-PaY>`_
+* `Creación de una interfaz con QMainWindow - https://youtu.be/fNS2Wyf-PaY <https://youtu.be/fNS2Wyf-PaY>`_
 
 
 Entregable Clase 17
