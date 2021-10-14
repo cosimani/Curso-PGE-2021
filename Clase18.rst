@@ -13,7 +13,8 @@ Uso de singleton
 .. figure:: images/clase18_singleton.png
 
 
-**Ejemplo de AdminDB como singleton**
+Ejemplo de AdminDB como singleton
+=================================
 
 .. code-block:: c++
 
