@@ -308,7 +308,6 @@ Entregable Clase 18
 - Modificar el ejemplo anterior para que Manager, Login y Formulario sean singletons.
 - Definir una clase Ventana que tenga una imagen de background, que sea singleton y agregarle objetos Boton para distintas acciones.
 - Definir estas clases independientes para luego controlarlas a través de un Manager.
-- Alimentar la base de datos de `sugerencias de Google <https://google.com/complete/search?hl=en&output=toolbar&q=hola>`_   
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
 - El link de Youtube se comparte con el docente por mensaje privado de Teams.
 - En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente antes de medianoche.
