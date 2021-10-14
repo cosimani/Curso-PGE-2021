@@ -299,6 +299,9 @@ Preparándonos para el parcial:
 ==============================
 
 - Tener bien preparada la clase AdminDB como singleton y con los métodos adecueados para actuar con una base SQLite.
+- Sobre carga de operadores
+- Templates
+- Contructores copia y operador de asignación
 
 
 Entregable Clase 18
