@@ -31,10 +31,7 @@ Pasos a seguir el día de hoy
 Entregable Clase 19
 ===================
 
-- Punto de partida: Proyecto que se trabajó en clase.
-- Modificar el ejemplo anterior para que Manager, Login y Formulario sean singletons.
-- Definir una clase Ventana que tenga una imagen de background, que sea singleton y agregarle objetos Boton para distintas acciones.
-- Definir estas clases independientes para luego controlarlas a través de un Manager.
+- Punto de partida: Proyecto que se trabajó en clase en grupo.
 - Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
 - El link de Youtube se comparte con el docente por mensaje privado de Teams.
 - En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente antes de medianoche.
