@@ -10,8 +10,6 @@ Clase 21 - PGE 2021
 typeid
 ======
 
-.. figure:: images/clase09/typeid.png
-
 - Comprueba si un objeto es de un tipo específico.
 - O bien, si dos objetos son del mismo tipo.
 - Este tipo de identificador en tiempo de ejecución se conoce como RTTI (Run-Time Type Identification).
