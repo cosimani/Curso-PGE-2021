@@ -266,7 +266,10 @@ Ejercicio
 Entregable Clase 21
 ===================
 
-- Punto de partida: Proyecto vacío.
+- Punto de partida: Proyecto vacío y realizar la Opción 1 o la Opción 2.
+- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
+- El link de Youtube se comparte con el docente por mensaje privado de Teams.
+- En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente antes de medianoche.
 
 Opción 1
 --------
@@ -297,9 +300,7 @@ Opción 2
 
 - Implementar y probar el ejercicio de la clase Medidor.
 
-- Entrar al siguiente `link para ver el registro de los entregables <https://docs.google.com/spreadsheets/d/1xbj6brqzdn3R9sfjDEP0LEjg6CwMNMOb8dBEYGmxhTw/edit?usp=sharing>`_ 
-- El link de Youtube se comparte con el docente por mensaje privado de Teams.
-- En caso de requerir más tiempo para la entrega, escribir por WhatsApp al docente antes de medianoche.
+
 
 
 
