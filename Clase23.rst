@@ -10,13 +10,13 @@ Clase 23 - PGE 2021
 Tratamiento de excepciones
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/clase15/excepciones1.png
+.. figure:: images/clase23_excepciones_parte1.png
 
 * `Explicación por un youtuber <http://www.youtube.com/watch?v=wcuknro_V-w>`_
 
 **Excepciones de la biblioteca estándar de C++**
 
-.. figure:: images/clase15/excepciones2.png
+.. figure:: images/clase23_excepciones_parte2.png
 
 
 **Ejemplo creando nuestras propias clases para excepciones**
