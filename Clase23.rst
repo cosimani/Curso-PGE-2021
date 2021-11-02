@@ -377,12 +377,12 @@ Ejercicio:
 Ejercicio:
 ==========
 
-.. figure:: images/clase11/ejer2.png
+.. figure:: images/clase23_ejercicio1.png
 
 Ejercicio:
 ==========
 
-.. figure:: images/clase11/ejer3.png
+.. figure:: images/clase23_ejercicio2.png
 
 - En esa grilla de 6 celdas, todas esas celdas son objetos Frame.
 - 5 de ellos serán imágenes fijas cargadas desde el disco duro.
@@ -392,7 +392,7 @@ Ejercicio:
 Ejercicio:
 ==========
 
-.. figure:: images/clase11/ejer4.png
+.. figure:: images/clase23_ejercicio3.png
 
 
 
@@ -451,7 +451,7 @@ Uso de atributos estáticos
 Ejercicio:
 ==========
 
-.. figure:: images/clase13/logger.png
+.. figure:: images/clase23_ejercicio4.png
 
 
 
