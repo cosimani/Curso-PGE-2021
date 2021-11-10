@@ -86,10 +86,6 @@ Ejercicio:
 - Usar Capturador para levantar las imágenes de la cámara.
 - Convertir a escala de grises y visualizarlo en pantalla.
 
-Ejercicio:
-==========
-
-.. figure:: images/clase23_ejercicio1.png
 
 Ejercicio:
 ==========
@@ -99,90 +95,18 @@ Ejercicio:
 - En esa grilla de 6 celdas, todas esas celdas son objetos Frame.
 - 5 de ellos serán imágenes fijas cargadas desde el disco duro.
 - La restante serán las imágenes obtenidas en tiempo real desde la cámara.
-
-
-Ejercicio:
-==========
-
-.. figure:: images/clase23_ejercicio3.png
-
-
-
-Uso de atributos estáticos
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: c++
-
-	// Archivo archivador.h
-	#ifndef ARCHIVADOR_H
-	#define ARCHIVADOR_H
-
-	#include <QFile>
-	#include <QTextStream>
-
-	class Archivador  {
-	private:
-	    static QFile *file;
-
-	public:
-	    static bool abrir( QString ruta );
-	    static bool almacenar( QString texto );
-	};
-	
-	#endif // ARCHIVADOR_H
-
-	
-.. code-block:: c++
-
-	// Archivo archivador.cpp
-	#include "archivador.h"
-
-	QFile * Archivador::file = new QFile("./defecto.txt");
-
-	bool Archivador::abrir( QString ruta )  {
-	    file->setFileName( ruta );
-
-	    if ( ! file->exists() )  {
-	        return false;
-	    }
-
-	    return file->open( QIODevice::Append | QIODevice::Text );
-	}
-
-	bool Archivador::almacenar( QString texto )  {
-	    if ( ! file->isOpen() )
-	        return false;
-
-	    QTextStream salida( file );
-	    salida << texto;
-
-	    return true;
-	}
-
-
-Ejercicio:
-==========
-
-.. figure:: images/clase23_ejercicio4.png
-
+- La clase Frame tendrá un método ``modo`` que recibe una enumeración con dos opciones ``IMAGEN_FIJA`` o ``CAMARA```.
 
 
 
 Ejercicio:
 ==========
 
-- Crear una aplicación con un QCameraViewfinder promovido a QWidget en QtDesigner
-- Un botón "Mostrar imagen" para que encienda la cámara y muestre la imagen
-- Que complete un QComboBox con las cámaras disponibles
-- Un QPushButton para iniciar la cámara seleccionada
-
-**Resolución**
-
-- `Código fuente <https://github.com/cosimani/Curso-PGE-2019/blob/master/resources/clase13/camera.zip?raw=true>`_
+- Utilizar el código de la clase Archivador de la clase pasada y mejorar el uso de excepciones
 
 
 
-Entregable Clase 23
+Entregable Clase 24
 ===================
 
 - Punto de partida: Proyecto vacío y realizar alguno de los ejercicios de esta clase.
