@@ -20,7 +20,7 @@ Desafío 4 - `Sobrecarga de operadores en MiVector <https://youtu.be/1rh1364vHqs
 
 Desafío 5 - `Clase LineaDeTexto <https://youtu.be/RKhyrwU8Lag>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/LineaDeTexto.rar?raw=true>`_
 
-Desafío 6 - `Clase LineaDeTexto <https://youtu.be/G-BJkBjMumM>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/LineaDeTexto_conRestriccion.rar?raw=true>`_
+Desafío 6 - `Clase LineaDeTexto con restricciones <https://youtu.be/G-BJkBjMumM>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/LineaDeTexto_conRestriccion.rar?raw=true>`_
 
 Desafío 7 - Código `aquí <https://github.com/cosimani/Curso-POO-2021/blob/master/sources/desafios/ImagenDeInternet.rar?raw=true>`_
 
