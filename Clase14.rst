@@ -32,13 +32,13 @@ Clase QCompleter
 Creación y uso de librerías dinámicas
 =====================================
 
-.. figure:: images/clase08/librerias.png
+.. figure:: images/clase14_librerias.png
 
-.. figure:: images/clase08/librerias01.png
+.. figure:: images/clase14_librerias01.png
 
-.. figure:: images/clase08/librerias02.png
+.. figure:: images/clase14_librerias02.png
 
-.. figure:: images/clase08/librerias03.png
+.. figure:: images/clase14_librerias03.png
 
 
 
