@@ -16,7 +16,7 @@ Desafío 2 - `Clase MiVector <https://youtu.be/CWkHbjj6ZH8>`_ - Código `aquí <
 
 Desafío 3 - `Clase ListadoEnteros <https://youtu.be/hwA4Yqcnl7Y>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/ListadoEnteros.rar?raw=true>`_
 
-Desafío 4 - Código `aquí <https://github.com/cosimani/Curso-POO-2021/blob/master/sources/desafios/ImagenDeInternet.rar?raw=true>`_
+Desafío 4 - `Sobrecarga de operadores en MiVector <https://youtu.be/1rh1364vHqs>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/MiVectorSobrecargado.rar?raw=true>`_
 
 Desafío 5 - Código `aquí <https://github.com/cosimani/Curso-POO-2021/blob/master/sources/desafios/Manager.rar?raw=true>`_
 
