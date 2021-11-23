@@ -24,7 +24,7 @@ Desafío 6 - `Clase LineaDeTexto con restricciones <https://youtu.be/G-BJkBjMumM
 
 Desafío 7 - `Login como singleton <https://youtu.be/HMvJciiZx_w>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/LoginComoSingleton.rar?raw=true>`_
 
-Desafío 8 - Código `aquí <https://github.com/cosimani/Curso-POO-2021/blob/master/sources/desafios/ImagenDeInternet.rar?raw=true>`_
+Desafío 8 - `Personas comparables <https://youtu.be/wEtAjT7Lwb4>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/PersonasComparables.rar?raw=true>`_
 
 Desafío 9 - Código `aquí <https://github.com/cosimani/Curso-POO-2021/blob/master/sources/desafios/ImagenDeInternet.rar?raw=true>`_
 
