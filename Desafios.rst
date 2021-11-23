@@ -40,7 +40,7 @@ Tema 2 - ``Sobrecarga de operadores``
 
 Tema 3 - ``Contructor copia y operador de asignación``
 
-Tema 4 - ``Diseño genérico de clases (por ejemplo: Login independiente``
+Tema 4 - ``Diseño genérico de clases (por ejemplo: Login independiente)``
 
 Tema 5 - ``Creación y uso de librerías compartidas``
 
