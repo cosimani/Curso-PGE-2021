@@ -31,4 +31,25 @@ Desafío 9 - `Punteros a funciones <https://youtu.be/UPYy382vPVQ>`_ - Código `a
 Desafío 10 - `Excepciones <https://youtu.be/MU-fXx-gER8>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/ListadoConExcepcion.rar?raw=true>`_
 
 
+Temas para examen final
+=======================
 
+Tema 1 - ``Templates``
+
+Tema 2 - ``Sobrecarga de operadores``
+
+Tema 3 - ``Contructor copia y operador de asignación``
+
+Tema 4 - ``Diseño genérico de clases (por ejemplo: Login independiente``
+
+Tema 5 - ``Creación y uso de librerías compartidas``
+
+Tema 6 - ``static``
+
+Tema 7 - ``Singleton``
+
+Tema 8 - ``Captura de eventos con eventFilter``
+
+Tema 9 - ``Punteros a funciones``
+
+Tema 10 - ``Excepciones``
