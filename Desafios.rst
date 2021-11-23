@@ -22,7 +22,7 @@ Desafío 5 - `Clase LineaDeTexto <https://youtu.be/RKhyrwU8Lag>`_ - Código `aqu
 
 Desafío 6 - `Clase LineaDeTexto con restricciones <https://youtu.be/G-BJkBjMumM>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/LineaDeTexto_conRestriccion.rar?raw=true>`_
 
-Desafío 7 - Código `aquí <https://github.com/cosimani/Curso-POO-2021/blob/master/sources/desafios/ImagenDeInternet.rar?raw=true>`_
+Desafío 7 - `Clase LineaDeTexto con restricciones <https://youtu.be/HMvJciiZx_w>`_ - Código `aquí <https://github.com/cosimani/Curso-PGE-2021/blob/main/desafios/LoginComoSingleton.rar?raw=true>`_
 
 Desafío 8 - Código `aquí <https://github.com/cosimani/Curso-POO-2021/blob/master/sources/desafios/ImagenDeInternet.rar?raw=true>`_
 
