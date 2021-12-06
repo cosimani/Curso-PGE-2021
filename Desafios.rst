@@ -53,3 +53,11 @@ Tema 8 - ``Captura de eventos con eventFilter``
 Tema 9 - ``Punteros a funciones``
 
 Tema 10 - ``Excepciones``
+
+ 
+==========
+
+
+`Aquí la fórmula para el cálculo de la nota final <https://colab.research.google.com/drive/1wNIeXeItu0Nb6O4Levs8c8q7g9t3dBag?usp=sharing>`_ 
+
+
